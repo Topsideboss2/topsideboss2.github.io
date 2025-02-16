@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: AWS EKS Blueprints
 draft: false
 tags:
-  - 
 ---
  
 [[EKS & Istio (Service Mesh)]]

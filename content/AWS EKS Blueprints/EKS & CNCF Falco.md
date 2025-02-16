@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: EKS & CNCF Falco
 draft: false
 tags:
-  - 
 ---
  
 > [!info] Implementing Runtime security in Amazon EKS using CNCF Falco | Amazon Web Services  

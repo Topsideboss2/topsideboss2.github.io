@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: EKS & Prefix Mode for IP Delegation
 draft: false
 tags:
-  - 
 ---
  
 > [!info] Prefix Mode for Linux - EKS Best Practices Guides  

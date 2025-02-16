@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: AWS EKS & VPC Lattice
 draft: false
 tags:
-  - 
 ---
  
 ### EKS Workshop

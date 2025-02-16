@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: EKS & Istio (Service Mesh)
 draft: false
 tags:
-  - 
 ---
  
 > [!info] Istio - Amazon EKS Blueprints for Terraform  

@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: Terraform & ECS Fargate
 draft: false
 tags:
-  - 
 ---
  
 ### Workshop Links
