@@ -1,3 +1,10 @@
+---
+title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+draft: false
+tags:
+  - 
+---
+ 
 ## ArgoCD Bridge
 This talk explains how to connect Terraform and ArgoCD in different setups, including when ArgoCD is used as a service. It shows how ArgoCD can store and use information about clusters and cloud resources using various methods like Cluster secrets, Git, and Plugins. These methods are part of the GitOps-Bridge approach.
 

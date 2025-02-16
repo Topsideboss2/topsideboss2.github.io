@@ -1,3 +1,10 @@
+---
+title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+draft: false
+tags:
+  - 
+---
+ 
 ### Blog
 
 AWS Observability best practices blog encourages the use of Kubecost [here](https://aws-observability.github.io/observability-best-practices/guides/cost/kubecost)

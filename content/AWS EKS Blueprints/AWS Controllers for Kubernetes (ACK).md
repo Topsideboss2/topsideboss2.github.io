@@ -1,3 +1,10 @@
+---
+title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+draft: false
+tags:
+  - 
+---
+ 
 ## Documentation
 
 > [!info] AWS Controllers for Kubernetes  

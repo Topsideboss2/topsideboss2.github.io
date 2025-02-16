@@ -1,3 +1,10 @@
+---
+title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+draft: false
+tags:
+  - 
+---
+ 
 > [!info] Prefix Mode for Linux - EKS Best Practices Guides  
 > This content has been updated and relocated to improve your experience.  
 > [https://aws.github.io/aws-eks-best-practices/networking/prefix-mode/index_linux/#prefix-mode-for-linux](https://aws.github.io/aws-eks-best-practices/networking/prefix-mode/index_linux/#prefix-mode-for-linux)  

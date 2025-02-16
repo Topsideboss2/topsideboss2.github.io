@@ -1,3 +1,10 @@
+---
+title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+draft: false
+tags:
+  - 
+---
+ 
 ### Github Links
 
 > [!info] GitHub - aws-ia/terraform-aws-security-hub: Configure and deploy AWS Security Hub.  

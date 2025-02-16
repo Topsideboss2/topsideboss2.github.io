@@ -1,3 +1,10 @@
+---
+title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+draft: false
+tags:
+  - 
+---
+ 
 > [!info] Istio - Amazon EKS Blueprints for Terraform  
 > See here for the prerequisites and run the following command to deploy this pattern.  
 > [https://aws-ia.github.io/terraform-aws-eks-blueprints/patterns/istio/](https://aws-ia.github.io/terraform-aws-eks-blueprints/patterns/istio/)  
