@@ -1,3 +1,9 @@
+---
+title: The Art of Doing Science and Engineering
+draft: false
+tags:
+---
+ 
 The Art of Doing Science and Engineering(Learning to Learn) - Richard Hamming
 
 ![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/TADSE.png?raw=true)
