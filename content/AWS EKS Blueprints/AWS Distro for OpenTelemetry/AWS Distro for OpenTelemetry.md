@@ -14,7 +14,8 @@ Find the official documentation [here](https://aws-otel.github.io/docs/introduct
 Link to the github repository is [here](https://github.com/aws-observability)
 
 #### AWS Observability Accelerator For Terraform
-![[media/AWSObservabilityAcceleratorForTerraform.png]]
+https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/AWSObservabilityAcceleratorForTerraform.png?raw=true
+
 Link to the documentation is [here](https://aws-observability.github.io/terraform-aws-observability-accelerator/)
 Link to the examples on github is [here](https://github.com/aws-observability/terraform-aws-observability-accelerator/tree/main/examples)
 

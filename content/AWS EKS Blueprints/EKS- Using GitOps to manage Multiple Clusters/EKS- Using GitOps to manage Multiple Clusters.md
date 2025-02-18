@@ -5,7 +5,8 @@ tags:
 ---
  
 ## Architectural Diagram
-![[media/image 3.png|image 3.png]]
+https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/image%203.png?raw=true
+
 ## Github Links
 
 > [!info] GitHub - aws-samples/eks-multi-cluster-gitops  

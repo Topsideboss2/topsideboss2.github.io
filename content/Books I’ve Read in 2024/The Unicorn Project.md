@@ -4,7 +4,8 @@ draft: false
 tags:
 ---
  
-![[media/TheUnicornProject.jpg]]  
+https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/TheUnicornProject.jpg?raw=true
+
 ## Chapter 8 (Project Inversion)
 - There is an ongoing **Feature freeze**
 - For 30 days, no new features are to be made. Developers are asked to pay down **technical debt** - Work on high priority defects and stabilizing the code base
