@@ -4,7 +4,7 @@ tags:
   - plugin/transformer
 ---
 
-This plugin provides support for [ox-hugo](https://github.com/kaushalmodi/ox-hugo) compatibility. See [[OxHugo compatibility]] for more information.
+This plugin provides support for [ox-hugo](https://github.com/kaushalmodi/ox-hugo) compatibility. See [OxHugo compatibility](#oxhugo-compatibility) for more information.
 
 [!note]
 For information on how to add, remove or configure plugins, see the [configuration#Plugins](#configuration-plugins) page.
@@ -17,10 +17,10 @@ This plugin accepts the following configuration options:
 - `replaceFigureWithMdImg`: If `true` (default), replaces `<figure/>` with `![]()`.
 - `replaceOrgLatex`: If `true` (default), converts Org-mode [[features/Latex|Latex]] fragments to Quartz-compatible LaTeX wrapped in `$` (for inline) and `$$` (for block equations).
 
-> [!warning]
-> While you can use this together with [[ObsidianFlavoredMarkdown]], it's not recommended because it might mutate the file in unexpected ways. Use with caution.
->
-> If you use `toml` frontmatter, make sure to configure the [[Frontmatter]] plugin accordingly. See [[OxHugo compatibility]] for an example.
+[!warning]
+While you can use this together with [ObsidianFlavoredMarkdown](#obsidianflavoredmarkdown), it's not recommended because it might mutate the file in unexpected ways. Use with caution.
+
+If you use `toml` frontmatter, make sure to configure the [Frontmatter](#frontmatter) plugin accordingly. See [OxHugo compatibility](#oxhugo-compatibility) for an example.
 
 ## API
 
