@@ -2,7 +2,7 @@
 
 Welcome to **Beyond The Clouds**!
 
-Dive into the world of cloud computing with me. This blog is dedicated to exploring the vast expanse of cloud technologies, including Cloud Native Technologies (i.e., Kubernetes, OpenShift), Cloud Infrastructure (i.e., AWS, Azure, GCP), System Design/Architecture, IoT, and Software Engineering best practices.
+Dive into the world of cloud computing with me. This blog is dedicated to exploring the vast expanse of cloud technologies, including Cloud Native (i.e., Kubernetes, OpenShift), Cloud Infrastructure (i.e., AWS, Azure, GCP), System Design/Architecture, IoT, and Software Engineering best practices.
 
 Every month, there is a book review featuring a book that I am currently reading.
 

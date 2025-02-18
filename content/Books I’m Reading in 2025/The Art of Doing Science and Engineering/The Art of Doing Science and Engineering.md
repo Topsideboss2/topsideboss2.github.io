@@ -1,6 +1,6 @@
 The Art of Doing Science and Engineering(Learning to Learn) - Richard Hamming
 
-![](/public/static/image6.png)
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/TADSE.png?raw=true)
 
 > [!info] Richard Hamming: "Learning to Learn"  
 > The Art of Doing Science and Engineering: Learning to Learn" was the capstone course by Dr.  
