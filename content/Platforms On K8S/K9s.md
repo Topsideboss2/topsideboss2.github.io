@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: K9s
 draft: false
 tags:
-  - 
 ---
  
 > [!info] K9s - Manage Your Kubernetes Clusters In Style  

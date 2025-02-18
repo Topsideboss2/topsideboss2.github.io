@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: KNative in Action
 draft: false
 tags:
-  - 
 ---
  
 > [!info] Kubernetes + Knative + GitLab + Harbor | Kubernetes + Knative + GitLab + Harbor  

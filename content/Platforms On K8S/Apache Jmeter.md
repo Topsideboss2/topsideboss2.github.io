@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: Apache Jmeter
 draft: false
 tags:
-  - 
 ---
  
 Load testing application tool

@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: Karpenter in Action
 draft: false
 tags:
-  - 
 ---
  
 > [!info] Building robust platform for containers part 2— Terraform EKS with Karpenter  

@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: Platforms On K8S
 draft: false
 tags:
-  - 
 ---
  
   

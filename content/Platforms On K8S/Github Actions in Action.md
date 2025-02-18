@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: Github Actions in Action
 draft: false
 tags:
-  - 
 ---
  
   

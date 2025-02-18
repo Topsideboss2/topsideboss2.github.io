@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: Nginx in Action
 draft: false
 tags:
-  - 
 ---
  
 ### Blogs

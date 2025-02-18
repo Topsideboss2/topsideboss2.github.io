@@ -1,8 +1,7 @@
 ---
-title: "How to publish Obsidian notes with Quartz on GitHub Pages"
+title: Istio Mesh on K8S
 draft: false
 tags:
-  - 
 ---
  
 
