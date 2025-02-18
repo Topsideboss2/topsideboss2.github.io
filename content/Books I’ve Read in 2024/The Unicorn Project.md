@@ -4,7 +4,7 @@ draft: false
 tags:
 ---
  
-https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/TheUnicornProject.jpg?raw=true
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/TheUnicornProject.jpg?raw=true)
 
 ## Chapter 8 (Project Inversion)
 - There is an ongoing **Feature freeze**

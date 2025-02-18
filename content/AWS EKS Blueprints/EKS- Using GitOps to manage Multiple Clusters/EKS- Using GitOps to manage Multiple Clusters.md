@@ -5,7 +5,7 @@ tags:
 ---
  
 ## Architectural Diagram
-https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/image%203.png?raw=true
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/image%203.png?raw=true)
 
 ## Github Links
 

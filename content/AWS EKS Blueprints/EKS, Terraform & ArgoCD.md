@@ -117,7 +117,7 @@ Multi-cluster topology deployment (Hub & Spoke)
   "workload_repo_url": "https://github.com/gitops-bridge-dev/gitops-bridge"
 }
 ```
-1. Get all the addons enabled in ArgoCD  
+7. Get all the addons enabled in ArgoCD  
       
     `kubectl get secret -n argocd -l` `[argocd.argoproj.io/secret-type=cluster](http://argocd.argoproj.io/secret-type=cluster)` `-o json | jq '.items[0].metadata.labels'`  
     Output:  
@@ -146,22 +146,24 @@ Multi-cluster topology deployment (Hub & Spoke)
   "kubernetes_version": "1.30"
 }
 ```
-1. Obtain the password to login with the command below:  
+
+8. Obtain the password to login with the command below:  
       
     `argocd admin initial-password -n argocd`
-2. Get the ArgoCD external IP from kubectl  
+9. Get the ArgoCD external IP from kubectl  
       
     `kubectl get all -n argocd`
-3. Login to ArgoCD using the CLI  
+10. Login to ArgoCD using the CLI  
       
     `argocd login a2c5deb76bed5456e8cf8b099b632e0d-1972979710.us-east-1.elb.amazonaws.com`  
     Username:  
     `admin`  
     Password:  
     `lKBtBoGHsMyEV-Us`
-4. Change the login password  
+11. Change the login password  
       
     `argocd account update-password`
-5. Login to the UI  
+12. Login to the UI  
       
     `a2c5deb76bed5456e8cf8b099b632e0d-1972979710.us-east-1.elb.amazonaws.com`
+
