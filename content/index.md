@@ -2,9 +2,18 @@
 title: Beyond The Clouds
 ---
 
-Welcome to **Beyond The Clouds**!
+Welcome to **⛅️ Beyond The Clouds**!
 
-Dive into the world of cloud computing with us. This blog is dedicated to exploring the vast expanse of cloud technologies, including Kubernetes, Cloud Native, AWS, GCP, Azure, and IoT. Whether you're a seasoned professional or just starting your journey, you'll find valuable insights, tutorials, and demos to help you navigate the cloud landscape.
+Dive into the world of cloud computing with me. This blog is dedicated to exploring the vast expanse of cloud technologies, including Cloud Native Technologies (i.e Kubernetes, OpenShift) Cloud Infrastructure (i.e AWS, Azure, GCP), System Design/Architecture, IoT and Software Engineering best practices.
 
-Stay tuned for in-depth articles, hands-on demos, and the latest trends in cloud computing. Let's explore the limitless possibilities that lie **Beyond The Clouds** together.
+Every month, there is a book review featuring a book that I am currently reading.
 
+Stay tuned for interesting takes on software engineering, in-depth articles, hands-on demos, and the latest trends in cloud computing.
+
+> "Any sufficiently advanced technology is indistinguishable from magic." — Arthur C. Clarke
+
+## Table Of Contents
+
+
+
+> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
