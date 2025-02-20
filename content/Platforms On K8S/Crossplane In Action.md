@@ -22,4 +22,4 @@ tags:
 > [https://www.youtube.com/live/AaIeNStnuew?si=qiaXVZCELJN8Dv7c](https://www.youtube.com/live/AaIeNStnuew?si=qiaXVZCELJN8Dv7c)
 
 
-![[architecture-2.png]]
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/architecture-2.png?raw=true)
