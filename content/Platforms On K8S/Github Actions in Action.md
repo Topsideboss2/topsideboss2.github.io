@@ -70,7 +70,7 @@ tags:
 > [https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services)  
 ### **Using GitHub Actions with AWS IAM Roles & OIDC**
 
-![[IMG_4920.jpg]]
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/IMG_4920.jpg?raw=true)
 
 > [!info] Using GitHub Actions with AWS IAM roles | Automat-IT Blog  
 > Click to learn about Using GitHub Actions with AWS IAM roles .  
