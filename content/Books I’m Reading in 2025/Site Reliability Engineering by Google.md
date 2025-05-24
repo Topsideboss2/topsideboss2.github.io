@@ -3,7 +3,7 @@ title: Site Reliability Engineering by Google
 draft: false
 tags:
 ---
-https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/SRE.png?raw=true) 
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/SRE.png?raw=true)
 ## 0. Preface
 
 > [!info] Software Engineering is just like having children - The labor before the birth is painful and difficult but the labor after the birth is where you actually spend most of your effort ~ *Ben Treynor Sloss*
