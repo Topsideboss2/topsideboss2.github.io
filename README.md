@@ -1,5 +1,7 @@
 # ⛅️ Above The Clouds
 
+> "A space where I offload what I want to remember. A place where I capture what I’m learning before I forget it."
+
 Welcome to **Beyond The Clouds**!
 
 Dive into the world of cloud computing with me. This blog is dedicated to exploring the vast expanse of cloud technologies, including Cloud Native (i.e., Kubernetes, OpenShift), Cloud Infrastructure (i.e., AWS, Azure, GCP), System Design/Architecture, IoT, and Software Engineering best practices.
