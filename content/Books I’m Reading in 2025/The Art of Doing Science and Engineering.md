@@ -2,6 +2,7 @@
 title: The Art of Doing Science and Engineering
 draft: false
 tags:
+  - Books
 ---
  
 The Art of Doing Science and Engineering(Learning to Learn) - Richard Hamming

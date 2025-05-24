@@ -2,6 +2,7 @@
 title: Site Reliability Engineering by Google
 draft: false
 tags:
+  - Books
 ---
 ![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/SRE.png?raw=true)
 ## 0. Preface
