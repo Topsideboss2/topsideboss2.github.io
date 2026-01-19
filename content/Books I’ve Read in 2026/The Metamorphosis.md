@@ -5,7 +5,7 @@ tags:
   - Books
 ---
  
-![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/TheMetamorphosis.png?raw=true)
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/TheMetamorphosis.jpg?raw=true)
 
 
 > [!tip] A first sign of beginning of understanding is the wish to die  ~ *Franz Kafka*
