@@ -19,3 +19,9 @@ Stay tuned for interesting takes on software engineering, in-depth articles, han
 - [[Platforms On K8S]]
 
 > [!tip] “One who works with the door open gets all kinds of interruptions, but they also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+
+---
+
+Bluesky: [@topsideboss2.bsky.social](https://topsideboss2.bsky.social)
+
+Github: [topsideboss2](https://github.com/Topsideboss2)
