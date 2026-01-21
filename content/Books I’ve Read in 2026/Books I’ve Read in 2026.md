@@ -5,4 +5,4 @@ tags:
   - Books
 ---
  
-[[The Metamorphosis]]
+- [[The Metamorphosis]]

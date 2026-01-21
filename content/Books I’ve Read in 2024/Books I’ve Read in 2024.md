@@ -5,5 +5,5 @@ tags:
   - Books
 ---
  
-[[The Unicorn Project]]
-[[The Pragmatic Programmer]]
+- [[The Unicorn Project]]
+- [[The Pragmatic Programmer]]
