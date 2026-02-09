@@ -1,9 +1,8 @@
 ---
-title: "Effortlessly Sync Your Files"
-subtitle: "A guide to setting up Rsync & Password-less SSH Login"
+title: Effortlessly Sync Your Files
+subtitle: A guide to setting up Rsync & Password-less SSH Login
 date: 2023-04-17T16:44:12.057Z
 readTime: 4 min
-coverImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1681745820181/68873cf0-a3e6-4582-a80d-0a7deeee82a3.jpeg
 slug: effortlessly-sync-your-files
 ---
 

@@ -1,8 +1,7 @@
 ---
-title: "Deploying Zabbix on your Application Server for Monitoring"
+title: Deploying Zabbix on your Application Server for Monitoring
 date: 2023-04-14T13:03:14.493Z
 readTime: 4 min
-coverImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1681477289489/6905fc59-7fcf-49af-8977-18a2bf55c026.jpeg
 slug: deploying-zabbix-on-your-application-server-for-monitoring
 ---
 
@@ -88,7 +87,7 @@ DBPassword="password"
 
 as shown below
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1681460770470/b2fe7a80-6ff7-41fb-89f3-841856a93d6b.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/configure-zabbix.png?raw=true)
 
 Lastly, start the Zabbix server and agent process
 
@@ -107,7 +106,7 @@ Now you can open the Zabbix UI web page. The default URL for Zabbix UI when usin
 
 Your Zabbix site should be up and running
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1681460811692/bdaaf7ad-7e79-48b2-a8a5-4e146de5e6e5.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/zabbix-login.png?raw=true)
 
 <details data-node-type="hn-details-summary"><summary>Running into authorization problems when trying to log in?</summary><div data-type="detailsContent">My first time configuring Zabbix I ran into some problems when trying to input the default password and after doing some research, I was able to change the default password from my server using an encrypted password with bycrypt and then manipulating the database to use this password. Here are the steps outlined below.</div></details>
 
@@ -130,7 +129,7 @@ QUIT;
 
 Login to the web frontend using the username as "Admin" and password as "password"
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1681460955880/3b91f906-5b71-4c6d-809e-3243462c7def.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/zabbix-dashboard.png?raw=true)
 
 ***NB: Do not forget to change your password through the dashboard***
 

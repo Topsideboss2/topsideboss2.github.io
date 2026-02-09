@@ -1,9 +1,8 @@
 ---
-title: "My Tech Journey Thus Far..."
-subtitle: "My advice to anybody starting in tech right now"
+title: My Tech Journey Thus Far...
+subtitle: My advice to anybody starting in tech right now
 date: 2023-04-03T22:12:56.658Z
 readTime: 4 min
-coverImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1680559847768/dda866b9-8a44-43db-85dd-8fa866018740.jpeg
 slug: my-tech-journey-thus-far
 ---
 

@@ -1,9 +1,8 @@
 ---
-title: "Explain it to me like I'm 5 yrs old..."
-subtitle: "What happens when you type google.com in your browser and press Enter?"
+title: Explain it to me like I'm 5 yrs old...
+subtitle: What happens when you type google.com in your browser and press Enter?
 date: 2023-04-13T22:53:22.192Z
 readTime: 7 min
-coverImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1681426581312/56c5de3c-565a-4da0-ba90-986081b413d4.jpeg
 slug: explain-it-to-me-like-im-5-yrs-old
 ---
 

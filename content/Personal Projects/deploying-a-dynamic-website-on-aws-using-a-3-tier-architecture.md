@@ -1,9 +1,8 @@
 ---
-title: "Deploying a Dynamic Website on AWS using a 3-Tier Architecture"
-subtitle: "How to create a web-tier, application-tier, and database-tier for a highly available and scalable architecture"
+title: Deploying a Dynamic Website on AWS using a 3-Tier Architecture
+subtitle: How to create a web-tier, application-tier, and database-tier for a highly available and scalable architecture
 date: 2023-03-26T14:40:27.850Z
 readTime: 9 min
-coverImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1679757060502/ccc1e009-f548-486f-80f2-3c99e57aea28.png
 slug: deploying-a-dynamic-website-on-aws-using-a-3-tier-architecture
 ---
 ![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/3-tier-architecture-app.png?raw=true)

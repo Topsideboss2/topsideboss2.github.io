@@ -1,8 +1,7 @@
 ---
-title: "How to Configure Let's Encrypt SSL on Ubuntu 20.04"
+title: How to Configure Let's Encrypt SSL on Ubuntu 20.04
 date: 2023-05-11T08:15:35.901Z
 readTime: 7 min
-coverImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1683792795971/73667a2e-44df-469f-bb29-1d76f26e8027.jpeg
 slug: how-to-configure-lets-encrypt-ssl-on-ubuntu-2004
 ---
 

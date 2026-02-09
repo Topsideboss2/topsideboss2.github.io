@@ -1,9 +1,8 @@
 ---
-title: "AWS Cloud Project Bootcamp - Week 2"
-subtitle: "Week-2 Homework Challenge - Implementing Datadog to Monitor our Docker Containers"
+title: AWS Cloud Project Bootcamp - Week 2
+subtitle: Week-2 Homework Challenge - Implementing Datadog to Monitor our Docker Containers
 date: 2023-04-01T11:54:23.874Z
 readTime: 4 min
-coverImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1680335528804/8f001b27-6a56-472b-b110-c125bf002459.webp
 slug: aws-cloud-project-bootcamp-week-2
 ---
 
