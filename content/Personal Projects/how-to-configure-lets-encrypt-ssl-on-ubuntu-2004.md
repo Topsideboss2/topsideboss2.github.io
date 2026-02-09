@@ -44,11 +44,11 @@ The following are the requirements for this task:
 
 So first and foremost, we need an actual server to work on. Head over to AWS EC2 and create a server that will host your site.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683755723229/16297a40-cc31-436d-b38a-e3e00f9c7062.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/create-an-ec2-instance-1.png?raw=true)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683755764343/1f9c016f-d74c-4be4-b2b7-718492571963.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/create-an-ec2-instance-2.png?raw=true)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683755779440/17530b7e-6350-4fa3-89a4-db7f01526b8f.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/create-an-ec2-instance-3.png?raw=true)
 
 ### Create an A record
 
@@ -61,7 +61,7 @@ I added two addresses to point to my AWS EC2 instance.
 * `topsideboss2.tech`
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683756001619/382e6bab-42c6-473b-946e-310e23bfe91f.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/create-an-a-record.png?raw=true)
 
 ### Install Dependencies
 
@@ -146,15 +146,15 @@ printf "${CYAN}== ${LABEL}${NO_COLOR}\n"
 
 Output:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683656831087/2c77f15e-092d-4935-b143-47b9d7fa1f9c.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/install-dependencies-output-1.png?raw=true)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683656905874/dfb1d596-a1bc-404d-b862-3c1a0296bc11.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/install-dependencies-output-2.png?raw=true)
 
 ### Clone your repository
 
 My porfolio website is pushed on GitHub. I will SSH into the server and clone the repo in the directory known as `/var/www/cloud-resume-challenge`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683788950798/55a112f0-b8f9-45dd-b9e9-cc9ad9cd5a63.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/clone-repository.png?raw=true)
 
 ### Create a config file for your Site
 
@@ -239,9 +239,9 @@ The next step will prompt you to inform Certbot of which domains you’d like to
 
 Output:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683656933845/e844245d-8362-42eb-a8d9-8027eb681616.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/obtain-ssl-cert-1.png?raw=true)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683656972768/1612c2de-73ae-46c1-b266-7dbd9816a536.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/obtain-ssl-cert-2.png?raw=true)
 
 The configuration is finished and now you can confirm that the config file you created has been modified successfully.
 
@@ -298,11 +298,11 @@ RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
 
 When we visit either `https://topsideboss2.tech` or `https://www.topsideboss2.tech`:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683657345546/9733bfbe-3294-44c4-8eae-5a6660a1bccc.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/personal-website.png?raw=true)
 
 You can use the [SSL Labs Server Test](https://www.ssllabs.com/ssltest/) to verify your certificate’s grade and obtain detailed information about it, from the perspective of an external service.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683791221885/ed38c417-7628-4622-bf22-edeb624a7359.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/ssl-verification.png?raw=true)
 
 ### **Automatically Renewing Let’s Encrypt Certificates**
 

@@ -4,6 +4,9 @@ subtitle: Week-2 Homework Challenge - Implementing Datadog to Monitor our Docker
 date: 2023-04-01T11:54:23.874Z
 readTime: 4 min
 slug: aws-cloud-project-bootcamp-week-2
+tags:
+  - aws
+  - aws-cloud-project-bootcamp
 ---
 
 After battling with containerization with docker in week-1, week-2 felt like a breath of fresh air. In hindsight, I feel like it was "The calm before the storm". Because frankly, what was yet to come in week-3 was not a walk in the park.

@@ -4,6 +4,10 @@ subtitle: A guide to setting up Rsync & Password-less SSH Login
 date: 2023-04-17T16:44:12.057Z
 readTime: 4 min
 slug: effortlessly-sync-your-files
+tags:
+  - ssh
+  - file-transfer
+  - rsync
 ---
 
 ### What is Rsync?

@@ -4,6 +4,9 @@ subtitle: How to create a web-tier, application-tier, and database-tier for a hi
 date: 2023-03-26T14:40:27.850Z
 readTime: 9 min
 slug: deploying-a-dynamic-website-on-aws-using-a-3-tier-architecture
+tags:
+  - aws
+  - 3-tier-architecture
 ---
 ![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/3-tier-architecture-app.png?raw=true)
 ### Introduction

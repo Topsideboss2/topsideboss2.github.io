@@ -4,15 +4,19 @@ subtitle: Week-1 Homework Challenge - How to Deploy Frontend & Backend Container
 date: 2023-03-29T23:16:41.892Z
 readTime: 5 min
 slug: aws-cloud-project-bootcamp
+tags:
+  - aws
+  - aws-cloud-project-bootcamp
+  - docker
+  - containers
 ---
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680119377829/4adac11b-8e5a-4154-b5a2-c9f4415cf332.jpeg align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/tintin-captain.png?raw=true)
 
 [AWS Ontario Virtual User Group's](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi1rcmh9oH-AhVE66QKHbt8AL0QFnoECBAQAQ&url=https%3A%2F%2Fwww.meetup.com%2Faws-ontario-virtual-user-group%2F&usg=AOvVaw0KtOvXsxt1UQfkVFrPrFH8) Cloud Project Bootcamp is a lot of things but easy isn't one of them. And for that, I am grateful to the organizers/instructors. In fact, the only appropriate response from Tintin should've been "Tell me about it, Cap".
 
 Where we are now, is it week 6? Week 7? I'm gonna be honest, I lost count at week 4 guys. If you don't believe me? I'll let this tweet by [Andrew Brown](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjZi5TS-IH-AhUxRfEDHYK7A8wQ6F56BAgIEAE&url=https%3A%2F%2Ftwitter.com%2Fandrewbrown%3Fref_src%3Dtwsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor&usg=AOvVaw1yY-hlo_ixLQR5TAVy8YmK) do the talking:
 
-%[https://twitter.com/andrewbrown/status/1628122296748752896?s=61&t=u-AwAA7tJdEGo1LU2a00jw] 
+![](https://twitter.com/andrewbrown/status/1628122296748752896?s=61&t=u-AwAA7tJdEGo1LU2a00jw) 
 
 Now more than ever, I understand how easy it is for participants to fall behind. And in a bid to help nobody feel left out, I will try to share how I was able to complete some homework challenges throughout the course of the [bootcamp](https://aws.cloudprojectbootcamp.com). Let's get started:
 

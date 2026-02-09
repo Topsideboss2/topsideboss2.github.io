@@ -50,7 +50,7 @@ A database is a structured collection of data.
 
 ### Step 1: DNS Request
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1681422741259/b008344c-cc3e-4028-bcb7-0116f68a2bb2.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/dns-request.png?raw=true)
 
 Your computer first needs to translate the domain name "[google.com](http://google.com)" into an IP address that the browser can use to communicate with the server. This is done through a process called Domain Name System (DNS) resolution. If the domain name is not cached in the browser, the browser sends a DNS request to a local DNS resolver, which then starts to look up the IP address of the server that hosts [google.com](http://google.com). If the resolver doesn't have the IP address cached, it will forward the request to the root server.
 
@@ -62,7 +62,7 @@ If the root server doesn't have the IP address cached, it will forward the reque
 
 Once the browser has obtained the IP address of the server, it establishes a Transmission Control Protocol (TCP) connection with the server using the Internet Protocol (IP). TCP is a protocol that ensures the reliable transmission of data between the client and the server. This involves a three-way handshake between the client and the server, where they exchange packets to establish and confirm the connection.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1681424258764/632937af-51c3-44e7-9284-1d70b0d445d8.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/tcp-ip-handshake.png?raw=true)
 
 ### Step 3: Firewall
 
@@ -92,6 +92,6 @@ If the requested web page requires data that is stored in a database, the applic
 
 In summary, when you type "[google.com](http://google.com)" in your browser and press Enter, your browser sends a DNS request to translate the domain name into an IP address. Once the IP address is obtained, the browser establishes a TCP connection with the server using the IP protocol. The server then establishes a secure connection using HTTPS/SSL, and any incoming traffic may be routed through a load balancer to distribute the load across multiple servers. The web server processes the HTTP request and may send it to an application server or database to generate a response. Finally, the web server sends the response back to the browser and voilà! The client now has a Google web page on his/her browser and can continue to browse comfortably.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1681425277323/e07a6dff-684e-45d9-b81f-c756bbbc3592.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/google.png?raw=true)
 
 In most cases, the DNS resolution process is completed within a few hundred milliseconds but might take upto several seconds depending on various factors such as network latency, DNS caching, and the performance of the DNS resolver and authoritative nameserver. I hope this helped you learn a lot more about DNS and it made you appreciate the internet and its underlying infrastructure.

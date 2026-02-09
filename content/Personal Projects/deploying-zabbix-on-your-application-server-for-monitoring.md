@@ -3,6 +3,10 @@ title: Deploying Zabbix on your Application Server for Monitoring
 date: 2023-04-14T13:03:14.493Z
 readTime: 4 min
 slug: deploying-zabbix-on-your-application-server-for-monitoring
+tags:
+  - zabbix
+  - monitoring
+  - mysql
 ---
 
 ### Introduction
