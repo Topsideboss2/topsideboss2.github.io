@@ -31,15 +31,11 @@ What we implemented using honeycomb was Application Performance Monitoring(APM).
 
 ### So, what is Datadog?
 
-![DataDog's Logo is a picture of a dog called “Bits.”](https://www.vectorlogo.zone/logos/datadoghq/datadoghq-ar21.png align="left")
-
 [Datadog](https://www.datadoghq.com/about/leadership/) is an enterprise solution for essential monitoring and security for your cloud applications. With end-to-end traces, metrics, and logs, datadog makes your applications, infrastructure, and third-party services entirely observable.
 
 **NB** - I came to learn that Datadog has a name for the dog on their logo. His name is Bits. Now, don't be fooled by [Bits](https://www.datadoghq.com/about/resources/). He might not look like it but he sure ain't one of those cute little dogs that make you go "Aaaawww! Choo chweet! So cute!". And I'll show you why in just a few.
 
 ### Pricing
-
-%[https://twitter.com/muriifx/status/1642095000493211649?s=61&t=WnYJjlJsJdx-hx6M3qIuKg] 
 
 As is with all enterprise solutions, there is a cost. Datadog pricing is broken down into two sections:
 
@@ -50,21 +46,21 @@ As is with all enterprise solutions, there is a cost. Datadog pricing is broken 
 
 Containers are supported in Pro and Enterprise plans. Depending on your plan, you can monitor 5 or 10 containers free for each host license. The container count is averaged across your entire infrastructure.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680341726059/26f0316d-750b-4581-9bf8-5afe138ce5ed.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-1.png?raw=true)
 
 For my fellow students who are eligible for the [GitHub Student Developer Pack](https://education.github.com/pack), I have good news for you. Datadog is offering a Pro Account, including 10 servers, free for 2 years. [Get access by connecting your GitHub account on Datadog.](http://studentpack.datadoghq.com/)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680342250617/07ce9466-98fc-4dae-b1ca-f39f2051de9f.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-2.png?raw=true)
 
 ### Installing Datadog on Docker
 
 After creating your user account. Log into the dashboard and navigate through the left side of the landing page and under **Integrations** hit **Agent** as shown below:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680342853236/839882ce-3fff-448d-9924-abe31a7c49f9.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-docker-1.png?raw=true)
 
 This page will assist us in the installation of Datadog Agent as a Docker container which will be monitoring our host. Lucky for us the Docker integration is enabled by default, as well as autodiscovery in auto config mode.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680343022183/33a669e9-5d69-494f-b5bc-0eec04f51ec4.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-docker-2.png?raw=true)
 
 Proceed to 'Select an API Key'. This will create one if you do not already have it. It is also important to note that this API key is automatically generated. Since we are currently deploying our containers in a [gitpod](https://www.gitpod.io) CDE. We will need to store this API key in our environment variables. Launch your gitpod environment and run the following command in your command line to save the API key.
 
@@ -75,10 +71,6 @@ export DD_API_KEY="**********"
 # Save as env variable in future gp sessions
 gp env DD_API_KEY="**********"
 ```
-
-Confirm the env variable is stored:
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680344540512/57cac5b3-4428-4aa5-ac98-dd85aac95604.png align="center")
 
 In our `.gitpod.yml` file, add the following block of code to always run the docker container on start-up
 
@@ -92,23 +84,23 @@ In our `.gitpod.yml` file, add the following block of code to always run the doc
 
 Now that the Datadog agent is deployed, run `docker-compose up` to run all your containers.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680346035069/e78c507c-c72e-4f14-935c-ad906e5e99f4.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/gitpod.png?raw=true)
 
 You can now view the data in the Datadog UI. Log in and navigate through the left side of the page and choose **Dashboard** as shown below:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680345081102/e1fbf87e-51ab-4e2b-ae61-87836eff9fb8.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-ui-1.png?raw=true)
 
 Under Docker-Overview, you can see I have 5 containers running.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680346173769/5014d526-7fc7-4ce4-8893-1a056f8b5b0e.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-ui-2.png?raw=true)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680346185466/21e2d2e7-6ef4-45a7-87ac-e57e5dc96046.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-ui-3.png?raw=true)
 
 Under Container-Overview:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680346206221/277fb04a-b03d-4a4e-a781-f883de307ab2.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-ui-4.png?raw=true)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680346689960/e4e925d1-15e2-442f-a37a-8defce60f96d.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/datadog-ui-5.png?raw=true)
 
 Now you can monitor several metrics on each of your containers such as:
 

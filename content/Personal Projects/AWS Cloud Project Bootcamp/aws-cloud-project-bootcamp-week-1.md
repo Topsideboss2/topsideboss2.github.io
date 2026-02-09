@@ -1,9 +1,9 @@
 ---
-title: AWS Cloud Project Bootcamp Week 1
+title: AWS Cloud Project Bootcamp - Week 1
 subtitle: Week-1 Homework Challenge - How to Deploy Frontend & Backend Containers on an EC2 Instance
 date: 2023-03-29T23:16:41.892Z
 readTime: 5 min
-slug: aws-cloud-project-bootcamp
+slug: aws-cloud-project-bootcamp-week-1
 tags:
   - aws
   - aws-cloud-project-bootcamp
@@ -28,23 +28,23 @@ This week, I take us back to Week 1's homework challenge: Launch an EC2 instance
 
 Log into the [AWS Console](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fus-east-1.console.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26region%3Dus-east-1%26state%3DhashArgsFromTB_us-east-1_83491dec0483b96a&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=cC5oI2Web1N8yHrNHcqkEPFqbZZlf0t2K3eo1VPrnf4&code_challenge_method=SHA-256) (Use an IAM user account for best security practices) and navigate to the EC2 Instance console. Under **Instances,** click on the **Launch Instance.**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680123115548/63f7ad19-dd34-40fd-817b-81028a44f520.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/creating-an-ec2-instance.png?raw=true)
 
 We will configure a simple EC2 instance with the following configurations:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680124042270/2192becf-1392-491a-a559-440d2debd97a.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/launching-an-ec2-instance.png?raw=true)
 
 Create a new key pair login that we will use to SSH to our instance
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680124047754/4955fc32-d9e5-428b-968b-51c82b6f6c08.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/creating-an-ec2-key-pair.png?raw=true)
 
 Go to advanced network settings and add ports 22(SSH), 3000(frontend), 4567(backend), 443(HTTPS) and 80(HTTP) to our security group.
 
 Configure storage settings as shown below and launch your instance.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680124066818/faa8d332-3068-480e-ac5c-66cf4ee01e2e.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/configure-ec2-instance-storage.png?raw=true)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680124652575/d7cf8997-b430-40bc-bee7-2941bb33774b.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/creating-an-ec2-instance-output.png?raw=true)
 
 Now that our instance is running, let's SSH into it using the ipv4 address given to us. I will be using Termius to SSH into my instance with the key pair I just created.
 
@@ -77,7 +77,7 @@ sudo systemctl status docker
 
 Output:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680125370917/51684bfc-4544-4871-8187-f91dbe94c365.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/install-docker-output.png?raw=true)
 
 Next step, clone your aws-bootcamp-cruddur-2023 repository in your EC2 instance. Navigate to your `cd /home/ubuntu/` directory first and clone your repo.
 
@@ -179,7 +179,7 @@ docker build . –t backend-flask
 
 Docker build output:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680127390121/ecde80dc-3375-41ca-b6f6-6d7f15c662e9.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/docker-build-output-1.png?raw=true)
 
 ```bash
 # cd into /backend-flask/
@@ -191,7 +191,7 @@ docker build . –t frontend-react-js
 
 Docker build output:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680127846263/a08c8d31-e70e-4413-b704-d61f67d6aae2.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/docker-build-output-2.png?raw=true)
 
 ### Run Backend and Frontend Containers
 
@@ -210,13 +210,13 @@ docker run -d -p 3000:3000 -it frontend-react-js
 
 Docker run output:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680128491878/65d7e2d1-e5cd-4954-a141-683cd1f0477f.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/docker-run-output.png?raw=true)
 
 Web browser output:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680129639612/d5095a10-eb09-426e-b8b7-471bc9c1ea6d.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/web-app-output.png?raw=true)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680129648200/b7143e8c-656b-4dd7-aa05-f780e463912a.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/api-app-output.png?raw=true)
 
 ***NB: Ensure you have this env variable configured on your CLI:***
 
@@ -241,15 +241,15 @@ docker compose up -d
 
 Docker compose up output:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680128745964/d153d5e2-385c-428e-862e-bfda11872a45.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/docker-compose-up-output.png?raw=true)
 
 Browser output on `http://44.203.194.19:3000(frontend)`:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680129658015/d210de25-c5c3-4f49-bd58-d30bea3e8b01.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/web-app-output.png?raw=true)
 
 Browser output on `http://44.203.194.19:4567/api/activities/home(backend)`:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680129690867/d217b23e-d640-4a7f-9c37-6a89f0444102.png align="center")
+![](https://github.com/Topsideboss2/topsideboss2.github.io/blob/v4/media/api-app-output.png?raw=true)
 
 And that, my friends, is how you deploy docker containers on an EC2 instance.
 
