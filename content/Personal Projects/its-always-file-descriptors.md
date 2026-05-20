@@ -17,7 +17,7 @@ There's a running joke in systems engineering. When something breaks in producti
 
 It's file descriptors. It's *always* file descriptors.
 
-Last week we learned this lesson again, the hard way, when our Advantage service lost all background processing for 26 hours. The root cause: a four-digit number someone set years ago and forgot about.
+Last week we learned this lesson again, the hard way, when one of our production services lost all background processing for 26 hours. The root cause: a four-digit number someone set years ago and forgot about.
 
 ---
 
@@ -49,7 +49,7 @@ There are two limits in play: a per-process soft limit (which the process can ra
 
 ## The incident
 
-Our Advantage service uses RabbitMQ as its backbone for background job processing. RabbitMQ is an Erlang application — and Erlang's concurrency model means it opens a lot of file descriptors. Each connection gets a socket. The Khepri metadata store (introduced in RabbitMQ 3.13) opens files for its Raft log. The Erlang VM itself opens descriptors for its module loader, its distribution protocol, its internal message passing.
+Our service uses RabbitMQ as its backbone for background job processing. RabbitMQ is an Erlang application — and Erlang's concurrency model means it opens a lot of file descriptors. Each connection gets a socket. The Khepri metadata store (introduced in RabbitMQ 3.13) opens files for its Raft log. The Erlang VM itself opens descriptors for its module loader, its distribution protocol, its internal message passing.
 
 We run across 20 virtual hosts. Under normal load this is fine. The descriptors accumulate gradually. Slowly. Quietly.
 
