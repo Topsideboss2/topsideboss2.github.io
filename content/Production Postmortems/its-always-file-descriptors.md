@@ -11,7 +11,8 @@ tags:
   - infrastructure
 ---
 
-> **Production Postmortem · Infrastructure**
+> [!note] The Unix Philosophy Tax
+> "Everything is a file" is elegant and powerful — until you have 10,000 simultaneous connections and a limit of 1,024 file handles. Every network connection, every open config file, every log handle, and every internal IPC channel counts against the same budget.
 
 There's a running joke in systems engineering. When something breaks in production (i.e when the database won't connect, the message broker stops accepting connections, the app throws cryptic auth errors at 4am) you most likely will run through the usual suspects. Is it a memory leak? Is the disk full? None of them end up being the culprit. Then, just when you're about to throw in the towel, eventually, inevitably, you run `ulimit -n` and sigh.
 
@@ -21,11 +22,11 @@ Last week we learned this lesson again, the hard way, when one of our production
 
 ---
 
-## What even is a file descriptor?
+## What is a file descriptor?
 
-Before we get into the incident, let's level-set. Most engineers know *of* file descriptors but treat them as someone else's problem — until they aren't.
+Before we get into the incident, let's level-set. Most engineers know *of* file descriptors but treat them as someone else's problem. Until they aren't.
 
-When your process opens anything — a file, a socket, a pipe, a device — the kernel hands back a small non-negative integer. That integer is a **file descriptor**. It's an index into a kernel-managed table that tracks all the I/O resources your process currently has open.
+When your process opens anything, be it a file, a socket, a pipe, or even a device, the kernel hands back a small non-negative integer. That integer is a **file descriptor**. It's an index into a kernel-managed table that tracks all the I/O resources your process currently has open.
 
 ```bash
 # Everything is a file. Everything.
@@ -42,26 +43,23 @@ Sockets are file descriptors. Log files are file descriptors. Unix pipes are fil
 
 There are two limits in play: a per-process soft limit (which the process can raise up to the hard limit), and a system-wide hard limit. Historically, the default soft limit has been `1024`. That number made sense in 1979. It does not make sense in 2026.
 
-> [!note] The Unix Philosophy Tax
-> "Everything is a file" is elegant and powerful — until you have 10,000 simultaneous connections and a limit of 1,024 file handles. Every network connection, every open config file, every log handle, and every internal IPC channel counts against the same budget.
-
 ---
 
 ## The incident
 
-Our service uses RabbitMQ as its backbone for background job processing. RabbitMQ is an Erlang application — and Erlang's concurrency model means it opens a lot of file descriptors. Each connection gets a socket. The Khepri metadata store (introduced in RabbitMQ 3.13) opens files for its Raft log. The Erlang VM itself opens descriptors for its module loader, its distribution protocol, its internal message passing.
+Our service uses RabbitMQ as its backbone for background job processing. RabbitMQ is an Erlang application and Erlang's concurrency model means it opens a lot of file descriptors. Each connection gets a socket. The Khepri metadata store (introduced in RabbitMQ 3.13) opens files for its Raft log. The Erlang VM itself opens descriptors for its module loader, its distribution protocol, its internal message passing.
 
 We run across 20 virtual hosts. Under normal load this is fine. The descriptors accumulate gradually. Slowly. Quietly.
 
-| # | Time | Event |
-|---|------|-------|
-| 1 | Months earlier | `LimitNOFILE=1024` sits in `limits.conf`. Nobody notices. The system runs fine at low load. |
-| 2 | May 19, 16:20 | Under peak load across 20 vhosts, the fd count reaches 1,024. Every subsequent `open()` syscall returns `EMFILE`: "too many open files." |
-| 3 | 16:20 — cascading | The Erlang `code_server` tries to read Khepri plugin `.beam` files. `EMFILE`. The plugin process can't start. Khepri's Raft process crashes with `noproc`. |
-| 4 | 16:20 — impact | Without Khepri, RabbitMQ can't serve metadata. Every auth attempt fails. Vhosts and queues appear to vanish. Background processing stops completely. |
-| 5 | May 20, 18:07 | Manual restart — recovered. Connections reset. System recovers — temporarily, until connections would have climbed again. |
+| #   | Time              | Event                                                                                                                                                      |
+| --- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Months earlier    | `LimitNOFILE=1024` sits in `limits.conf`. Nobody notices. The system runs fine at low load.                                                                |
+| 2   | May 19, 16:20     | Under peak load across 20 vhosts, the fd count reaches 1,024. Every subsequent `open()` syscall returns `EMFILE`: "too many open files."                   |
+| 3   | 16:20 — cascading | The Erlang `code_server` tries to read Khepri plugin `.beam` files. `EMFILE`. The plugin process can't start. Khepri's Raft process crashes with `noproc`. |
+| 4   | 16:20 — impact    | Without Khepri, RabbitMQ can't serve metadata. Every auth attempt fails. Vhosts and queues appear to vanish. Background processing stops completely.       |
+| 5   | May 20, 18:07     | Recovered through a manual restart of RabbitMQ. Connections reset. System recovers (temporarily), until connections would have climbed again.              |
 
-What made this incident particularly nasty is that it didn't look like a resource exhaustion problem. There was no OOM killer, no disk-full alert, no obvious crash. RabbitMQ was running. It just couldn't *do anything*. The symptoms — invalid credentials, missing vhosts — pointed everywhere except at `ulimit`.
+What made this incident particularly nasty is that it didn't look like a resource exhaustion problem. There was no OOM killer, no disk-full alert, no obvious crash. RabbitMQ was running. It just couldn't *do anything*. The symptoms were invalid credentials and missing vhosts and this pointed everywhere except at `ulimit`.
 
 > [!warning] Why fd exhaustion is hard to diagnose
 > When a process runs out of file descriptors, it doesn't crash. It keeps running and starts failing silently on any operation that requires opening a new handle. Log writes fail. New connections fail. Internal modules fail to load. The errors look like application bugs, not OS limits.
@@ -70,7 +68,7 @@ What made this incident particularly nasty is that it didn't look like a resourc
 
 ## The fd budget math nobody does
 
-Let's be honest about why this happens. Nobody sits down and calculates their fd budget when they first deploy a service. They copy a config from Stack Overflow, it works, and they ship it.
+Let's be honest about why this happens. Nobody sits down and calculates their fd budget when they first deploy a service. 
 
 For RabbitMQ specifically, the math looks like this:
 
@@ -91,13 +89,13 @@ For RabbitMQ specifically, the math looks like this:
 # And 1,024 is not far away.
 ```
 
-| Environment | FD Usage | Limit | Status |
-|-------------|----------|-------|--------|
-| dev (light load) | 124 | 1024 | OK |
-| staging (moderate) | 738 | 1024 | Warning |
-| production (peak) — incident | 1024 | 1024 | Critical |
+| Environment        | FD Usage | Limit | Status   |
+| ------------------ | -------- | ----- | -------- |
+| dev (light load)   | 124      | 1024  | OK       |
+| staging (moderate) | 738      | 1024  | Warning  |
+| production (peak)  | 1024     | 1024  | Critical |
 
-Notice that dev and staging looked totally fine. The limit only revealed itself under production load. This is the trap: your testing environments almost never stress file descriptors. You need real traffic, real connection pools, real load — and by then you're paging on a Saturday.
+Notice that dev and staging looked totally fine. The limit only revealed itself under production load. This is the trap: your testing environments almost never stress file descriptors. You need real traffic, real connection pools, real load and by then you're paging on a Saturday.
 
 ---
 
@@ -125,7 +123,7 @@ sudo systemctl restart rabbitmq-server
 cat /proc/$(pgrep -f beam.smp | head -1)/limits | grep "open files"
 ```
 
-We chose 500,000. That might sound like overkill. It isn't. At 500k, even if every connection somehow opened 100 file handles, we'd support 5,000 simultaneous connections before sweating. And the cost of a large fd limit is essentially zero — the kernel doesn't pre-allocate anything, it only tracks descriptors that are actually open.
+We chose 500,000. That might sound like overkill. It isn't. At 500k, even if every connection somehow opened 100 file handles, we'd support 5,000 simultaneous connections before sweating. And the cost of a large fd limit is essentially zero the kernel doesn't pre-allocate anything, it only tracks descriptors that are actually open.
 
 > [!tip] Rule of thumb
 > For any stateful networked service — database, message broker, cache, proxy — set `LimitNOFILE` to at least `65536`. For high-throughput brokers like RabbitMQ with many vhosts, go to `500000` or higher. The number costs nothing if you don't use it.

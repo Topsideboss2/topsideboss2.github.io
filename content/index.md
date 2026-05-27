@@ -16,8 +16,9 @@ Stay tuned for interesting takes on software engineering, in-depth articles, han
 - [[Books I’ve Read in 2024]]
 - [[Books I’ve Read in 2025]]
 - [[Books I’ve Read in 2026]]
-- [[Platforms On K8S]]
 - [[Personal Projects]]
+- [[Platforms On K8S]]
+- [[Production Postmortems]]
 
 > [!tip] “One who works with the door open gets all kinds of interruptions, but they also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
