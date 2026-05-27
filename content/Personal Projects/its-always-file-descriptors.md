@@ -13,7 +13,7 @@ tags:
 
 > **Production Postmortem · Infrastructure**
 
-There's a running joke in systems engineering. When something breaks in production — the database won't connect, the message broker stops accepting connections, the app throws cryptic auth errors at 4am — you run through the usual suspects. Memory leak? Disk full? Network partition? And then, eventually, inevitably, you run `ulimit -n` and sigh.
+There's a running joke in systems engineering. When something breaks in production (i.e when the database won't connect, the message broker stops accepting connections, the app throws cryptic auth errors at 4am) you most likely will run through the usual suspects. Is it a memory leak? Is the disk full? None of them end up being the culprit. Then, just when you're about to throw in the towel, eventually, inevitably, you run `ulimit -n` and sigh.
 
 It's file descriptors. It's *always* file descriptors.
 
