@@ -10,7 +10,7 @@ Production systems don't break in obvious ways. They degrade quietly — a metri
 
 This is a collection of those moments.
 
-I work as a Platform Engineer at [Savannah Informatics Limited](https://www.savannahinformatics.com/), where I run and maintain the infrastructure that healthcare systems in East Africa run on. The stakes are real. When a service goes down, it's not a degraded user experience, it's a clinician who can't access a patient record, a lab result that doesn't arrive, a patient that is stranded in hospital awaiting a preauthorisation to be approved by the payer, a workflow that stops. That context shapes how I think about reliability and what I consider worth writing about.
+As a Platform Engineer, I run and maintain infrastructure that is critical for the healthcare industry. The stakes are real. When a service goes down, it's not a degraded user experience, it's a clinician who can't access a patient record, a lab result that doesn't arrive, a patient that is stranded in hospital awaiting a preauthorisation to be approved by the payer, a workflow that stops. That context shapes how I think about reliability and what I consider worth writing about.
 
 These postmortems are honest accounts of incidents I've been part of, what broke, why it broke, how long it took to figure that out, and what we changed afterwards. Some of them are embarrassing in hindsight. Most of them come down to something that seems obvious once you know the answer: a resource limit nobody checked, an assumption baked into a deployment script, a default that was never meant for production load.
 

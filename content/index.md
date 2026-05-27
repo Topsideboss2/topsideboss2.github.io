@@ -16,6 +16,7 @@ Stay tuned for interesting takes on software engineering, in-depth articles, han
 - [[Books I’ve Read in 2024]]
 - [[Books I’ve Read in 2025]]
 - [[Books I’ve Read in 2026]]
+- [[Frugal By Design]]
 - [[Personal Projects]]
 - [[Platforms On K8S]]
 - [[Production Postmortems]]
