@@ -13,6 +13,7 @@ Stay tuned for interesting takes on software engineering, in-depth articles, han
 ## Table Of Contents
 
 - [[AWS EKS Blueprints]]
+- [[Back to Basics]]
 - [[Books I’ve Read in 2024]]
 - [[Books I’ve Read in 2025]]
 - [[Books I’ve Read in 2026]]

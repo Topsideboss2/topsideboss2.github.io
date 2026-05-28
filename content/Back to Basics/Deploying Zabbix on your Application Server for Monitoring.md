@@ -11,13 +11,13 @@ tags:
 
 ### Introduction
 
-What is monitoring and why is it important? Monitoring refers to the act of observing, tracking, and assessing the status, progress, or performance of something over time. This could be anything from the progress of a project, or the performance of a computer system. Even the health of a container. In one of my most recent articles, I wrote about container monitoring with Datadog and how important it is in the cloud space. Check it out in my [AWS Cloud Project Bootcamp](https://topsideboss2.engineer/series/aws-cloud-camp) series.
+What is monitoring and why is it important? Monitoring refers to the act of observing, tracking, and assessing the status, progress, or performance of something over time. This could be anything from the progress of a project, or the performance of a computer system. Even the health of a container. In one of my most recent articles, I wrote about container monitoring with Datadog and how important it is in the cloud space. Check it out in my [[aws-cloud-project-bootcamp]] series.
 
 Monitoring is important for several reasons. Firstly, it allows us to identify and diagnose problems early on before they become more serious or cause major disruptions. This can save time, money, and resources in the long run.
 
 In this article, I will show you how to install an open-source tool known as [Zabbix](https://www.zabbix.com). I will be setting it up on localized servers in my workplace to monitor the health and performance of these servers.
 
-And With that being said, let's get started.
+And with that being said, let's get started.
 
 ### So what is Zabbix?
 
