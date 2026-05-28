@@ -1,6 +1,6 @@
 ---
 title: EKS & Sample Microservices Architecture
-draft: false
+draft: true
 tags:
 ---
  

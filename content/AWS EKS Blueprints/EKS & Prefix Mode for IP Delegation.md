@@ -1,6 +1,6 @@
 ---
 title: EKS & Prefix Mode for IP Delegation
-draft: false
+draft: true
 tags:
 ---
  

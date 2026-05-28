@@ -1,6 +1,6 @@
 ---
 title: AWS EKS Blueprints
-draft: false
+draft: true
 tags:
 ---
  

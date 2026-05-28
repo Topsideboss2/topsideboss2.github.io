@@ -8,6 +8,9 @@ tags:
   - k8s
   - infrastructure
   - finops
+  - keda
+  - karpenter
+  - robusta
 title: How We Cut Our Cloud Bill by 50% in 3 Months
 ---
 

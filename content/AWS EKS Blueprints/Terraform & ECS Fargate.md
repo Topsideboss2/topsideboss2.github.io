@@ -1,6 +1,6 @@
 ---
 title: Terraform & ECS Fargate
-draft: false
+draft: true
 tags:
 ---
  

@@ -1,6 +1,6 @@
 ---
 title: EKS & Istio (Service Mesh)
-draft: false
+draft: true
 tags:
 ---
  

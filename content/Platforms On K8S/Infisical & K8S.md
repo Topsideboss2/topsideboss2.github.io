@@ -1,6 +1,6 @@
 ---
 title: Infisical & K8S
-draft: false
+draft: true
 tags:
 ---
  

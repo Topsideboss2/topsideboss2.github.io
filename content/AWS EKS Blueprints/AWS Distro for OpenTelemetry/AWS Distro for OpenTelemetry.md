@@ -1,6 +1,6 @@
 ---
 title: AWS Distro for OpenTelemetry
-draft: false
+draft: true
 tags:
 ---
  

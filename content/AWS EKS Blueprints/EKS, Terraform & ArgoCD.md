@@ -1,6 +1,6 @@
 ---
 title: EKS, Terraform & ArgoCD
-draft: false
+draft: true
 tags:
 ---
  

@@ -1,6 +1,6 @@
 ---
 title: Istio Mesh on K8S
-draft: false
+draft: true
 tags:
 ---
  

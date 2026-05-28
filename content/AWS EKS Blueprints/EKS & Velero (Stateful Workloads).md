@@ -1,6 +1,6 @@
 ---
 title: EKS & Velero (Stateful Workloads)
-draft: false
+draft: true
 tags:
 ---
  

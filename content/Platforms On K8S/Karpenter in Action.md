@@ -1,6 +1,6 @@
 ---
 title: Karpenter in Action
-draft: false
+draft: true
 tags:
 ---
  

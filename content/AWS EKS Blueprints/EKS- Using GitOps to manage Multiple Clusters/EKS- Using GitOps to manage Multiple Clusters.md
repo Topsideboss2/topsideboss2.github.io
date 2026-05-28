@@ -1,6 +1,6 @@
 ---
 title: EKS- Using GitOps to manage Multiple Clusters
-draft: false
+draft: true
 tags:
 ---
  

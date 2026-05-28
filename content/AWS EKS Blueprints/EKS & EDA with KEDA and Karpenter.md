@@ -1,6 +1,6 @@
 ---
 title: EKS & EDA with KEDA and Karpenter
-draft: false
+draft: true
 tags:
 ---
  
