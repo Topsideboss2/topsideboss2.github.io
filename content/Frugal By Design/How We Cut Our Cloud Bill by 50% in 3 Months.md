@@ -11,8 +11,7 @@ tags:
 title: How We Cut Our Cloud Bill by 50% in 3 Months
 ---
 
-> [!info] 
-> "Every engineering decision is a buying decision." ~ **_Werner Vogels_**
+> [!info] "Every engineering decision is a buying decision." ~ **_Dr Werner Vogels_**
 
 That quote sat at the centre of every conversation we had when we started this work. It sounds obvious in hindsight, but it is the kind of thing that gets lost when teams are moving fast, shipping features, and operating under the assumption that cloud costs are someone else's problem.
 
