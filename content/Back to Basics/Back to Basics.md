@@ -7,6 +7,7 @@ tags:
 date: 2026-05-28T18:00:00.000Z
 slug: back-to-basics
 ---
+> [!tip] ***Keep It Stupid Simple***
 
 There is a certain kind of engineering confidence that comes not from knowing the most advanced tools, but from having an unusually solid grip on the fundamentals. 
 
