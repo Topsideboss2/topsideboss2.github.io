@@ -1,40 +1,26 @@
 ---
 title: AWS EKS Blueprints
-draft: true
+draft: false
 tags:
 ---
+## Work-In-Progress
  
-[[EKS & Istio (Service Mesh)]]
-
-[[EKS, Terraform & ArgoCD]]
-
-[[Terraform & ECS Fargate]]
-
-[[EKS Cluster Security]]
-
-[[EKS Monitoring Using Loki, Prometheus & Grafana]]
-
-[[EKS & Cilium]]
-
-[[EKS & IAM Access Management]]
-
-[[EKS & Velero (Stateful Workloads)]]
-
-[[AWS & Gateway API Controller]]
-
-[[AWS & LoadBalancer Controller]]
-
-[[AWS Controllers for Kubernetes (ACK)]]
-
-[[EKS & CNCF Falco]]
-
-[[EKS & Hardeneks Python Package]]
-
-[[EKS- Using GitOps to manage Multiple Clusters]]
-
-[[AWS EKS & VPC Lattice]]
-
-[[Granting IAM Users AWS Billing Access]]
+- [[EKS & Istio (Service Mesh)]]
+- [[EKS, Terraform & ArgoCD]]
+- [[Terraform & ECS Fargate]]
+- [[EKS Cluster Security]]
+- [[EKS Monitoring Using Loki, Prometheus & Grafana]]
+- [[EKS & Cilium]]
+- [[EKS & IAM Access Management]]
+- [[EKS & Velero (Stateful Workloads)]]
+- [[AWS & Gateway API Controller]]
+- [[AWS & LoadBalancer Controller]]
+- [[AWS Controllers for Kubernetes (ACK)]]
+- [[EKS & CNCF Falco]]
+- [[EKS & Hardeneks Python Package]]
+- [[EKS- Using GitOps to manage Multiple Clusters]]
+- [[AWS EKS & VPC Lattice]]
+- [[Granting IAM Users AWS Billing Access]]
 
 ## Terraform & EKS
 This project contains a collection of Amazon EKS cluster patterns implemented in Terraform that demonstrate how fast and easy it is for customers to adopt [Amazon EKS](https://aws.amazon.com/eks/). The patterns can be used by AWS customers, partners, and internal AWS teams to configure and manage complete EKS clusters that are fully bootstrapped with the operational software that is needed to deploy and operate workloads.

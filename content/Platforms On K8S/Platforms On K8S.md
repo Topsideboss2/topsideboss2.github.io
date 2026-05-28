@@ -3,24 +3,24 @@ title: Platforms On K8S
 draft: false
 tags:
 ---
- 
+## Work-In-Progress 
   
-[[Kubernetes (KinD Cluster)]]
-[[Tekton in Action]]
-[[Github Actions in Action]]
-[[ArgoCD in Action]]
-[[Crossplane In Action]]
-[[Dapr In Action]]
-[[KNative in Action]]
-[[K9s]]
-[[Karpenter in Action]]
-[[Gateway API]]
-[[Istio Mesh on K8S]]
-[[Infisical & K8S]]
-[[Grafana in Action]]
-[[Apache APISIX in Action]]
-[[Litmus in Action]]
-[[Kong in Action]]
+- [[Kubernetes (KinD Cluster)]]
+- [[Tekton in Action]]
+- [[Github Actions in Action]]
+- [[ArgoCD in Action]]
+- [[Crossplane In Action]]
+- [[Dapr In Action]]
+- [[KNative in Action]]
+- [[K9s]]
+- [[Karpenter in Action]]
+- [[Gateway API]]
+- [[Istio Mesh on K8S]]
+- [[Infisical & K8S]]
+- [[Grafana in Action]]
+- [[Apache APISIX in Action]]
+- [[Litmus in Action]]
+- [[Kong in Action]]
   
 ## Github Links
 
